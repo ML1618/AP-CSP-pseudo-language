@@ -6,4 +6,4 @@ When creating this language, I followed along with this [YouTube series](https:/
 
 Progress:
  - Lexer episode finished
- - Parser episode in progress (0:0)
+ - Parser episode in progress (8:09)
