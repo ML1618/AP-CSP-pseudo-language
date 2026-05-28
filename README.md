@@ -6,7 +6,8 @@ When creating this language, I followed along with this [YouTube series](https:/
 
 Progress:
  - Lexer episode finished
- - Parser episode in progress (18:32)
+ - Parser episode finished
+ - Interpreter episode in progress (10:43)
 
 Issues:
  - Arrows (carets) under errors don't extend the whole way through, like they do in the video
