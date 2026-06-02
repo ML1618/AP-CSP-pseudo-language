@@ -8,8 +8,16 @@ Progress:
  - Lexer episode finished
  - Parser episode finished
  - Interpreter episode finished
- - Power operator episode skipped (power operators aren't a part of the AP CSP language)
- - Variable episode just started
+ - Power operator finished
+ - Variable episode in progress (9:32)
+
+Deviations from AP CSP language:
+ - I use power operators because (a) the tutorial I'm following uses them and it'd be too hard/annoying to work around that, and (b) power operators can be useful
+ - Declare variables with VAR [identifier] <- [expr] (AP CSP doesn't use VAR)
+    - The video used VAR and I felt it would be too hard/annoying to cut it
+
+Specific syntax:
+ - `←` is the character used for variable assignment
 
 Issues:
  - Arrows (carets) under errors don't extend the whole way through, like they do in the video

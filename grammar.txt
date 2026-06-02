@@ -1,7 +1,11 @@
-expr   : term ((plus|minus) term)*
+expr   : KEYWORD:VAR IDENTIFIER EQUALS expr
+       : term ((plus|minus) term)*
 
 term   : factor ((MULT|DIV) factor)*
 
-factor : INT|FLOAT
-       : (PLUS|MINUS) factor
+factor : (PLUS|MINUS) power
+
+power  : atom (POW factor)*
+
+atom   : INT|FLOAT|IDENTIFIER
        : LPAREN expr RPAREN
