@@ -10,14 +10,16 @@ Progress:
  - Interpreter episode finished
  - Power operator finished
  - Variable episode finished
+ - Comparisons and logical operators episode finished
+ - IF statement video just started
 
 Deviations from AP CSP language:
+ - `←` as the assignment operator is too annoying to use (you have to copy/paste it and it's not muscle memory), so I use `=` instead.
  - I use power operators because (a) the tutorial I'm following uses them and it'd be too hard/annoying to work around that, and (b) power operators can be useful
  - Declare variables with VAR [identifier] <- [expr] (AP CSP doesn't use VAR)
     - The video used VAR and I felt it would be too hard/annoying to cut it
 
 Specific syntax:
- - `←` is the character used for variable assignment
  - `^` is the power operator
 
 Issues:
