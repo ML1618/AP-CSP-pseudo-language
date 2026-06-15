@@ -11,7 +11,8 @@ Progress:
  - Power operator finished
  - Variable episode finished
  - Comparisons and logical operators episode finished
- - IF statement video just started
+ - IF statement video finished
+ - FOR and WHILE statement video in progress
 
 Deviations from AP CSP language:
  - `←` as the assignment operator is too annoying to use (you have to copy/paste it and it's not muscle memory), so I use `=` instead.
@@ -25,6 +26,8 @@ Specific syntax:
 
 Issues:
  - Arrows (carets) under errors don't extend the whole way through, like they do in the video
+ - Parts of the language (such as TRUE, FALSE, etc) can have their values altered
 
 To-Do:
  - Make the IF statement part match the video for now, but later change it to match the AP CSP language
+ - Make the FOR/WHILE statement part match the video for now, but later change it to match the AP CSP language
