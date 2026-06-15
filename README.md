@@ -1,6 +1,6 @@
-# AP-CSP-pseudo-langauge
+# AP-CSP-pseudo-language
 
-A programming language based off of the AP CSP pseudo language. Documentation of their syntax can be found at this [PDF of the 2026 exam reference information](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf).
+A programming language based on the AP CSP pseudo-language. Documentation of their syntax can be found at this [PDF of the 2026 exam reference information](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf).
 
 When creating this language, I followed along with this [YouTube series](https://www.youtube.com/playlist?list=PLZQftyCk7_SdoVexSmwy_tBgs7P0b97yD).
 
