@@ -123,7 +123,7 @@ KEYWORDS = [
     'IF',
     'THEN',
     'ELIF',
-    'ELSE'
+    'ELSE',
     'FOR',
     'TO',
     'STEP',
@@ -959,12 +959,13 @@ class Interpreter:
         error = None
 
         if node.op_token.type == TT_MINUS:
-            number = number.multiplied_by(Number(-1))
+            number, error = number.multiplied_by(Number(-1))
         elif node.op_token.matches(TT_KEYWORD, 'NOT'):
             number, error = number.notted()
 
         if error:
             return res.failure(error)
+
         return res.success(number.set_pos(node.pos_start, node.pos_end))
     
     def visit_IfNode(self, node, context):
