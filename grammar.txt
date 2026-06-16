@@ -1,21 +1,29 @@
-expr       : KEYWORD:VAR IDENTIFIER EQUALS expr
-           : comp-expr ((KEYWORD:AND|KEYWORD:OR) comp-expr)*
+expr        : KEYWORD:VAR IDENTIFIER EQUALS expr
+            : comp-expr ((KEYWORD:AND|KEYWORD:OR) comp-expr)*
            
-comp-expr  : NOT comp-expr
-           : arith-expr ((EE|LT|GT|LTE|GTE) arith-epr)*
+comp-expr   : NOT comp-expr
+            : arith-expr ((EE|LT|GT|LTE|GTE) arith-epr)*
 
 arith-expr : term ((plus|minus) term)*
 
-term       : factor ((MULT|DIV) factor)*
+term        : factor ((MULT|DIV) factor)*
 
-factor     : (PLUS|MINUS) power
+factor      : (PLUS|MINUS) factor
+            : power
 
-power      : atom (POW factor)*
+power       : atom (POW factor)*
 
-atom       : INT|FLOAT|IDENTIFIER
-           : LPAREN expr RPAREN
-           : if-expr
+atom        : INT|FLOAT|IDENTIFIER
+            : LPAREN expr RPAREN
+            : if-expr
+            : for-expr
+            : while-expr
 
-if-expr    : KEYWORD:IF expr KEYWORD:THEN expr
-             (KEYWORD:ELIF expr KEYWORD:THEN expr)*
-             (KEYWORD:ELSE expr)?
+if-expr     : KEYWORD:IF expr KEYWORD:THEN expr
+              (KEYWORD:ELIF expr KEYWORD:THEN expr)*
+              (KEYWORD:ELSE expr)?
+
+for-expr    : KEYWORD:FOR IDENTIFIER EQUALS expr KEYWORD:TO expr
+              (KEYWORD:STEP expr)? KEYWORD:THEN expr
+
+while-expr  : KEYWORD:WHILE expr KEYWORD:THEN expr
