@@ -12,7 +12,8 @@ Progress:
  - Variable episode finished
  - Comparisons and logical operators episode finished
  - IF statement video finished
- - FOR and WHILE statement video in progress
+ - FOR and WHILE statement video finished
+ - Function video just started
 
 Deviations from AP CSP language:
  - `←` as the assignment operator is too annoying to use (you have to copy/paste it and it's not muscle memory), so I use `=` instead.
