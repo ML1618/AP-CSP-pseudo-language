@@ -4,7 +4,7 @@ expr        : KEYWORD:VAR IDENTIFIER EQUALS expr
 comp-expr   : NOT comp-expr
             : arith-expr ((EE|LT|GT|LTE|GTE) arith-epr)*
 
-arith-expr : term ((plus|minus) term)*
+arith-expr  : term ((plus|minus) term)*
 
 term        : factor ((MULT|DIV) factor)*
 
