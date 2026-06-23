@@ -18,6 +18,7 @@ Progress:
 - IF statement video finished
 - FOR and WHILE statement video finished
 - Function video finished
+- String video in progress ()
 
 Specific syntax:
 - `^` is the power operator
