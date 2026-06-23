@@ -700,19 +700,16 @@ class Parser:
             if res.error:
                 return res
             return res.success(if_expr)
-
         elif tok.matches(TT_KEYWORD, "FOR"):
             for_expr = res.register(self.for_expr())
             if res.error:
                 return res
             return res.success(for_expr)
-
         elif tok.matches(TT_KEYWORD, "WHILE"):
             while_expr = res.register(self.while_expr())
             if res.error:
                 return res
             return res.success(while_expr)
-
         elif tok.matches(TT_KEYWORD, "FUN"):
             func_def = res.register(self.func_def())
             if res.error:

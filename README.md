@@ -17,7 +17,7 @@ Progress:
 - Comparisons and logical operators episode finished
 - IF statement video finished
 - FOR and WHILE statement video finished
-- Function video just started
+- Function video finished
 
 Specific syntax:
 - `^` is the power operator
