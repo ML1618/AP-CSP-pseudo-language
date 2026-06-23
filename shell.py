@@ -1,8 +1,8 @@
-import APCSP
+import language
 
 while True:
-    text = input("APCSP > ")
-    result, error = APCSP.run("<stdin>", text)
+    text = input("LANGUAGE > ")
+    result, error = language.run("<stdin>", text)
 
     if error:
         print(error.as_string())
